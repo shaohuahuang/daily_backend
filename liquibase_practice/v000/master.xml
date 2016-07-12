@@ -12,4 +12,6 @@
     </preConditions>
     <include file="v000/2009-10-15-73.xml"/>
     <include file="v000/2009-10-15-59.xml"/>
+    <!-- Do not include any more changes in this file -->
+    <changeSet author="MajorVersion" id="1" />
 </databaseChangeLog>

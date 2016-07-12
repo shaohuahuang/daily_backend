@@ -2,5 +2,11 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
-    <include file="v001/master.xml" />
+    <changeSet author="jsmith" id="1">
+        <addForeignKeyConstraint baseColumnNames="dpt_id"
+                                 baseTableName="employees"
+                                 constraintName="emp_dpt_fk"
+                                 referencedColumnNames="id"
+                                 referencedTableName="departments"/>
+    </changeSet>
 </databaseChangeLog>
