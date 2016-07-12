@@ -6,7 +6,6 @@
         <createProcedure>
             create or replace function departments_bi_sp() returns trigger as $$
             begin
-                select departments_seq.nextval into new.id;
             end
             $$ language plpgsql
         </createProcedure>
@@ -15,8 +14,8 @@
             for each row execute procedure departments_bi_sp()
         </createProcedure>
         <rollback>
-            drop trigger departments_bi;
-            drop function departments_bi_sp;
+            drop trigger departments_bi on departments;
+            drop function departments_bi_sp();
         </rollback>
     </changeSet>
 </databaseChangeLog>
