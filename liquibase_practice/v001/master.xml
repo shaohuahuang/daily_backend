@@ -10,4 +10,5 @@
             WHERE author='MajorVersion'
         </sqlCheck>
     </preConditions>
+    <include file="v001/2009-10-16-102.xml"/>
 </databaseChangeLog>

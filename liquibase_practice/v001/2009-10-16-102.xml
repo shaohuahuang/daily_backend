@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet author="jsmith" id="1">
+        <addColumn tableName="employees">
+            <column name="fixed_salary" type="number(6,2)"
+                    remarks="Monthly gross salary"/>
+            <column name="bonus" type="number(6,2)"
+                    remarks="On-target monthly bonus"/>
+        </addColumn>
+        <update tableName="employees">
+            <column name="fixed_salary" valueNumeric="salary * 0.9"/>
+            <column name="bonus" valueNumeric="salary * 0.1"/>
+        </update>
+        <addNotNullConstraint tableName="employees" columnName="fixed_salary" />
+        <addNotNullConstraint tableName="employees" columnName="bonus" />
+        <dropColumn tableName="employees" columnName="salary" />
+    </changeSet>
+</databaseChangeLog>
