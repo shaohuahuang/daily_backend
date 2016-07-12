@@ -11,4 +11,5 @@
         </sqlCheck>
     </preConditions>
     <include file="v001/2009-10-16-102.xml"/>
+    <include file="v001/2009-10-16-105.xml"/>
 </databaseChangeLog>
