@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet author="jsmith" id="1">
+        <createTable tableName="departments"
+                     remarks="The departments of this company. Does not include geographical divisions.">
+            <column name="id" type="number(4,0)">
+                <constraints nullable="false" primaryKey="true"
+                             primaryKeyName="DPT_PK"/>
+            </column>
+            <column name="dname" type="varchar2(14)"
+                    remarks="The official department name as registered on the internal website."/>
+        </createTable>
+        <addUniqueConstraint constraintName="departments_uk1"
+                             columnNames="dname" tableName="departments"/>
+        <createSequence sequenceName="departments_seq"/>
+    </changeSet>
+
+    <include file="latest/trg/departments_bi.xml"/>
+
+    <changeSet author="jsmith" id="2">
+        <createTable tableName="employees">
+            <column name="id" type="number(4,0)">
+                <constraints nullable="false" primaryKey="true"
+                             primaryKeyName="EMP_PK"/>
+            </column>
+            <column name="ename" type="varchar2(14)"
+                    remarks="The first and last name"/>
+            <column name="salary" type="number(6,2)"
+                    remarks="The full remuneration"/>
+            <column name="dpt_id" type="number(4,0)"/>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="dpt_id"
+                                 baseTableName="employees"
+                                 constraintName="emp_dpt_fk"
+                                 referencedColumnNames="id"
+                                 referencedTableName="departments"/>
+    </changeSet>
+</databaseChangeLog>
