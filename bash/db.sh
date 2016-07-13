@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if psq mydb -c '\q' 2>&1;
+if psql mydb -c '\q' 2>&1;
 then
     echo "mydb already exists"
 else
