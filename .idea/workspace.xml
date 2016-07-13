@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f97f66e-8a69-422b-841e-0527d437ed5c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bash/db.sh" afterPath="$PROJECT_DIR$/bash/db.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database/lb_update.sh" afterPath="$PROJECT_DIR$/Database/lb_update.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="backend.iws" />
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lb_update.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lb_update.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Database/lb_update.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.03253796">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -74,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bash/db.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19522777">
+            <state vertical-scroll-proportion="0.0">
               <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               <folding />
             </state>
@@ -128,10 +128,10 @@
         <option value="$PROJECT_DIR$/liquibase_practice/v002/master.xml" />
         <option value="$PROJECT_DIR$/Database/liquibase_dev.properties" />
         <option value="$PROJECT_DIR$/Database/update.xml" />
-        <option value="$PROJECT_DIR$/Database/lb_update.sh" />
         <option value="$PROJECT_DIR$/Database/v000/tables/expenditures.sql" />
         <option value="$PROJECT_DIR$/Database/v000/master.xml" />
         <option value="$PROJECT_DIR$/bash/db.sh" />
+        <option value="$PROJECT_DIR$/Database/lb_update.sh" />
       </list>
     </option>
   </component>
@@ -692,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Database/lb_update.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liquibase_practice/v000/master.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22776572">
@@ -734,8 +726,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bash/db.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19522777">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/lb_update.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03253796">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
           <folding />
         </state>
       </provider>
