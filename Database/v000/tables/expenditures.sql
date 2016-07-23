@@ -7,3 +7,4 @@ create table expenditures(
     amount FLOAT,
     update_on DATE not null DEFAULT CURRENT_DATE
 );
+

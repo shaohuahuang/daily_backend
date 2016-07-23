@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-liquibase --changeLogFile=update.xml update
+/usr/local/bin/liquibase --changeLogFile=update.xml update
