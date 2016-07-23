@@ -7,6 +7,8 @@
       <w>dbchangelog</w>
       <w>mydb</w>
       <w>postgresql</w>
+      <w>rowt</w>
+      <w>rowtype</w>
     </words>
   </dictionary>
 </component>

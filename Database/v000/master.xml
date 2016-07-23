@@ -11,4 +11,7 @@
         </sqlCheck>
     </preConditions>
     <include file="v000/tables/expenditures.sql"/>
+    <changeSet author="shaohua" id="update_expenditure">
+        <sqlFile path="v000/procedures/update_expenditure_record.sql" splitStatements="false"/>
+    </changeSet>
 </databaseChangeLog>

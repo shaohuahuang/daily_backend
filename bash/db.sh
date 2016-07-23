@@ -6,3 +6,5 @@ else
     echo "mydb not exists yet"
     /usr/local/bin/createdb mydb
 fi
+
+/usr/local/bin/psql -U shaohua mydb -a -f ./test_data/expenditure_test_data.sql

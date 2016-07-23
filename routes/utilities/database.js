@@ -9,4 +9,5 @@ var cn = {
 
 var db = pgp(cn);
 
-module.exports = db;
+module.exports.db = db;
+module.exports.pgp = pgp;
